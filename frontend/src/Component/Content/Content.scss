@@ -1,0 +1,38 @@
+.content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    // border: 1px solid red;
+    gap: 15px;
+    margin-top: 10px;
+    .item{
+        border: 1px solid grey;
+        display: flex;
+        flex-direction: column;
+        // text-align: center;
+        align-items: center;
+        padding: 5px;
+        .para{
+            // border: 1px solid red;
+            text-align: center;
+        }
+        span{
+            font-weight: 500;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+
+@media screen and (max-width:1170px){
+    .content{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width:628px){
+    .content{
+        display: flex;
+     flex-direction: column;
+    }
+}

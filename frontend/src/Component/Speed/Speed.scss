@@ -1,0 +1,35 @@
+.speed{
+    width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 15px;
+    .item{
+        border: 1px solid grey;
+        padding: 10px;
+        // text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .para{
+            width: fit-content;
+            // border: 1px solid red;
+            // text-align: center;
+        }
+    }
+}
+@media screen and (max-width:910px){
+    .speed{
+        display: grid;
+        grid-template-columns: auto auto;
+        
+    }
+}
+@media screen and (max-width:470px){
+    .speed{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}

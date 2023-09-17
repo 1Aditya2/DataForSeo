@@ -1,0 +1,22 @@
+.htags{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    // border: 1px solid purple;
+    // flex-wrap: wrap;
+    gap: 15px;
+    .item{
+        border: 1px solid grey;
+        padding: 5px;
+        gap: 10px;
+        .para{
+           
+            ul{
+               
+                list-style: none;
+            }
+        }
+    }
+}
