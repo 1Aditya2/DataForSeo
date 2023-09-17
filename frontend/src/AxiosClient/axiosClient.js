@@ -11,8 +11,8 @@ axiosClient.interceptors.request.use((request) => {
   // console.log(request, "request at interceptor");
   // console.log(request.data);
   request.auth = {
-    username: "yadiyadav515@gmail.com",
-    password: "e04d68f83c3f3c43",
+    username: "aditya.yadav_cs.aiml20@gla.ac.in",
+    password: "abb10b7888f05870",
   };
   return request;
 });
