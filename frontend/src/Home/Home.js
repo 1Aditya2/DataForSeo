@@ -23,6 +23,12 @@ function Home() {
         custom_js: "meta = {}; meta.url = document.URL; meta;", 
       }
     }))
+    // dispatch(idApiCall({
+    //   data:{
+    //     id:'09181709-6712-0216-0000-18ba1bc508d2',
+    //     limit:1
+    //   }
+    // }))
   }
   function handleChange(e){
     settarget(e.target.value)
