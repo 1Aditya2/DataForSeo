@@ -8,7 +8,6 @@ import Speed from "../Component/Speed/Speed";
 import { Progress } from "antd";
 import MediaTags from "../Component/SocialMediaTags/MediaTags";
 import { useSelector } from "react-redux";
-// import { idApiCall } from "../Redux/DataForSeoSlice";
 function Output() {
   const allData = useSelector((state) => state.createTaskReducer.allData);
   
@@ -17,7 +16,7 @@ function Output() {
     <div className="output">
       <div className="heading">
         Results for:&nbsp;&nbsp;<span>{allData?.url}</span>
-        {/* Results for: {url ? <span>{url}</span> : <span>Entered URL</span>} */}
+        
       </div>
 
       <div className="on-pagescore">

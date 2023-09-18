@@ -7,15 +7,14 @@
     .item{
         border: 1px solid grey;
         padding: 10px;
-        // text-align: center;
+     
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         .para{
             width: fit-content;
-            // border: 1px solid red;
-            // text-align: center;
+            
         }
     }
 }

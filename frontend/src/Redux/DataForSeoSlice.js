@@ -1,17 +1,13 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { axiosClient } from "../AxiosClient/axiosClient";
-// import axios from "axios";
 import { TOAST_FAILURE, TOAST_SUCCESS } from "../App";
-// import axios from "axios";
 export const searchUrl = createAsyncThunk(
   "seo/searchUrl",
   async (body, thunkAPI) => {
     try {
-      // console.log(body);
       thunkAPI.dispatch(setLoading(true));
 
       const response = await axiosClient.post("/task_post", body);
-      console.log(response?.data.tasks[0]?.id, "response at frontend");
       setTimeout(taskCompleted, 30000);
       const data = {
         id: response?.data.tasks[0].id,
@@ -21,7 +17,11 @@ export const searchUrl = createAsyncThunk(
         thunkAPI.dispatch(idApiCall({ data }));
       }
     } catch (e) {
-      console.log(e);
+      thunkAPI.dispatch(showToast({
+        type:TOAST_FAILURE,
+        message:e
+      }))
+     
     } finally {
     }
   }
@@ -32,7 +32,7 @@ export const idApiCall = createAsyncThunk(
     try {
       thunkAPI.dispatch(setLoading(true));
       const newresponse = await axiosClient.post("/pages", body);
-      console.log(newresponse, "new respone at frontend");
+      
       if (newresponse == "Task not found") {
         thunkAPI.dispatch(
           showToast({
@@ -100,7 +100,10 @@ export const idApiCall = createAsyncThunk(
         );
       }
     } catch (e) {
-      console.log(e);
+      thunkAPI.dispatch(showToast({
+        type:TOAST_FAILURE,
+        message:e
+      }))
     } finally {
       thunkAPI.dispatch(setLoading(false));
     }

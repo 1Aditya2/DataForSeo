@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 import "./Home.scss";
 import { useDispatch, useSelector } from "react-redux";
-import {  idApiCall, searchUrl } from "../Redux/DataForSeoSlice";
-// import { useNavigate } from "react-router-dom";
+import { searchUrl } from "../Redux/DataForSeoSlice";
 import Output from "../Output/Output";
-
-// import React from 'react'
-
 function Home() {
   const [target,settarget]=useState(null)
   const dataFound=useSelector(state=>state.createTaskReducer.dataFound)
@@ -23,12 +19,6 @@ function Home() {
         custom_js: "meta = {}; meta.url = document.URL; meta;", 
       }
     }))
-    // dispatch(idApiCall({
-    //   data:{
-    //     id:'09181709-6712-0216-0000-18ba1bc508d2',
-    //     limit:1
-    //   }
-    // }))
   }
   function handleChange(e){
     settarget(e.target.value)

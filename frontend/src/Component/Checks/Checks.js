@@ -37,7 +37,7 @@ function Checks() {
                     This can negatively impact your page load speed and user
                     experience.
                   </p>
-                  {/* {item[1]?<p></p>:<p>This can negatively impact your page load speed and user experience.</p>} */}
+                 
                 </div>
               </div>
             );

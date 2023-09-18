@@ -1,5 +1,5 @@
 .output{
-    // border: 1px solid red;
+   
     margin-bottom: 30px;
     margin-top: 30px;
     width: 100%;
@@ -9,7 +9,7 @@
     align-items: center;
     gap: 20px;
     .heading{
-        // font-size: 1.5rem;
+       
          
         text-transform: uppercase;
         span{
@@ -19,11 +19,10 @@
         }
     }
     .on-pagescore{
-        // border: 1px solid grey;
+      
 
         display: flex;
-        // justify-content: space-between;
-        // justify-content: center;
+       
         gap: 10px;
         align-items: center;
         
@@ -46,25 +45,25 @@
         }
     }
     .on-pageresults{
-        // border: 1px solid red;
+   
         width: 90%;
         display: flex; 
         justify-content: center;
         flex-direction: column; 
-        // padding: 10px;
+      
     }
     .htags-list{
-        // border: 1px solid purple;
+      
         width: 90%;
 
     }
     .speed-insights{
         width: 90%;
-        // border: 1px solid red;
+        
     }
     .media-tags{
         width: 90%;
-        // border: 1px solid red;
+      
     }
 
     

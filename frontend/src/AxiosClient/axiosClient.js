@@ -3,8 +3,6 @@ export const axiosClient = axios.create({
   baseURL: "https://api.dataforseo.com/v3/on_page",
 });
 axiosClient.interceptors.request.use((request) => {
-  console.log(request, "request at interceptor");
-  // console.log(request.data);
   request.auth = {
     username: "aditya.yadav_cs.aiml20@gla.ac.in",
     password: "abb10b7888f05870",
@@ -24,6 +22,6 @@ axiosClient.interceptors.response.use(async (response) => {
     return response;
   } catch (e) {
     return Promise.reject(e);
-    console.log(e);
+   
   }
 });
